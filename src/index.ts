@@ -24,6 +24,9 @@ export default function ModuleWrapper(
     const namespace = core.createNamespace(path);
 
     //the module code here
+    tasksRouter.get("/test", (req, res) => {
+      res.send("test");
+    });
 
     //return the actual module
     return {

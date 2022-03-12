@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The \"tasks\" backend module of the Internal-Staff-Portal.",
   "main": "dist/index.js",
-  "repository": "https://github.com/internal-staff-portal/backend-module-template.git",
+  "repository": "https://github.com/internal-staff-portal/backend-tasks.git",
   "author": "Laurenz1606 <laurenz.rausche@gmail.com>",
   "license": "MIT",
   "private": false,
