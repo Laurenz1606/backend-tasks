@@ -15,10 +15,10 @@ export default function ModuleWrapper(
   //the constructor
   return function (core: CoreValues): Module {
     //define module path
-    const path = "/TModule";
+    const path = "/tasks";
 
     //create the router
-    const TModuleRouter = Router();
+    const tasksRouter = Router();
 
     //create the socket.io namespace
     const namespace = core.createNamespace(path);
@@ -27,9 +27,9 @@ export default function ModuleWrapper(
 
     //return the actual module
     return {
-      name: "TModule",
+      name: "tasks",
       path: path,
-      router: TModuleRouter,
+      router: tasksRouter,
     };
   };
 }
