@@ -24,7 +24,7 @@ export default function ModuleWrapper(
     const namespace = core.createNamespace(path);
 
     //the module code here
-    tasksRouter.get("/test", (req, res) => {
+    tasksRouter.get("/test", core.auth.validateMiddleware, (req, res) => {
       res.send("test");
     });
 
